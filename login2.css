@@ -1,0 +1,326 @@
+﻿body {
+}
+
+.login_Header {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	background-color: #102240;
+	-webkit-box-shadow: 0px 1px 1.5px var(--dark-color4);
+	box-shadow: 0px 1px 1.5px var(--dark-color4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 6;
+	min-height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 1 auto;
+	flex: 0 1 auto;
+}
+
+.login_Header_main {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	min-height: 40px;
+	padding: 0 16px
+}
+
+.login_Header_logo {
+	margin: 10px 0;
+	background-image: url("logo.png?ver=1.0.2");
+	background-size: contain;
+	background-position: left;
+	background-repeat: no-repeat;
+	min-width: 140px;
+	height: 40px;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 auto;
+	flex: 1 0 auto
+}
+
+.login_Header_JoinNow {
+	background-color: #f77a00;
+}
+
+.login_Header_JoinNow > a {
+	color: white;
+}
+
+.login_Header_SignIn {
+	background-color: red;
+	color: white;
+	margin-left: 8px;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltiptext {
+	visibility: visible;
+	width: 210px;
+	background-color: red;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 150%;
+	left: 37%;
+	margin-left: -60px;
+	margin-top: -195px;
+	/*opacity: 0;*/
+	display:none;
+}
+
+.tooltiptext::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent red transparent;
+}
+
+.tooltipShow {
+	/*opacity: 0.9;*/
+	display:block;
+}
+
+.opaque {
+	background-color: hsla(0, 0%, 0%, 0.65);
+}
+
+.divlogin {
+	left: 0;
+	right: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	bottom: -330px;
+}
+
+.divLoginShow {
+	bottom: 0px;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+/*.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}*/
+
+.login_footer {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	background-color: #102240;
+	position: relative;
+	color: rgba(255, 255, 255, 0.4);
+	padding: 18px
+}
+
+.login_footer_item {
+	margin-bottom: 32px
+}
+
+.login_footer_title {
+	color: rgba(255, 255, 255, 0.78);
+	padding-left: 12px;
+	padding-bottom: 24px;
+	font-size: 14px;
+}
+
+.login_footer_content {
+	font-size: 12px
+}
+
+.login_footer_content .btn {
+	min-height: 30px;
+	font-size: 12px;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start
+}
+
+.login_footer_logo {
+	background-image: url("/img/logo_footer.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.4;
+	width: 100%;
+	height: 48px
+}
+
+.login_footer_copy {
+	z-index: 1;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	color: var(--nova-footer-color);
+	padding-top: 12px
+}
+
+.btn {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	min-height: 40px;
+	border-radius: 4px;
+	padding: 0 12px;
+	cursor: pointer;
+	font-size: 14px
+}
+
+.login_feature_title {
+	color: #102240;
+	font-size: 20px;
+	font-weight: bold;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	margin-top:2%;
+}
+
+.login_feature_line {
+	width: 100%;
+	height: 1px;
+	background-color: #102240
+}
+
+.login_feature_text {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	margin: 0 16px;
+	white-space: nowrap;
+	text-align: center
+}
+
+.login_feature_list {
+	margin-top: 8px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	flex-direction: column
+}
+
+.login_feature_item {
+	width: 100%;
+	height: 40vw;
+	margin-left:3%;
+	/*padding: 12px 16px 0 16px;*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	cursor: pointer
+}
+
+.login_feature_item.is-sports {
+	background: url("Banner_750x304_Sport_Betting_En_Side.jpg") no-repeat;
+	background-size: 95%;
+}
+
+.login_feature_item.is-perdana3d {
+	background: url("Banner_750x304_Perdana_3D_En_Side.jpg") no-repeat;
+	background-size:  95%;
+}
+
+.login_feature_item.is-liveCasino {
+	background: url("Banner_750x304_Live_Casino_En_Side.jpg") no-repeat;
+	background-size: 95%;
+}
+
+.login_feature_item.is-slot {
+	background: url("Banner_750x304_Slot_Games_En_Side.jpg") no-repeat;
+	background-size: 95%;
+}
+
+.login_feature_item.is-4d {
+	background: url("Banner_750x304_4D_&_Lottery_En_Side.jpg") no-repeat;
+	background-size: 95%;
+}
+
+
